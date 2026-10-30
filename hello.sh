@@ -1,1 +1,2 @@
-Hello DevOps
+Learning git in DevOps
+Git is easy
