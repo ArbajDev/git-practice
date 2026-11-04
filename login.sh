@@ -1,7 +1,13 @@
 #!/bin/bash
 
 echo "Welcome to Login System"
-echo "Please enter your username:"
-read username
 
-echo "Hello, $username! Login successful."
+read -p "Enter username: " username
+read -sp "Enter password: " password
+echo
+
+if [ "$username" = "admin" ] && [ "$password" = "1234" ]; then
+    echo "Login successful!"
+else
+    echo "Invalid username or password!"
+fi
